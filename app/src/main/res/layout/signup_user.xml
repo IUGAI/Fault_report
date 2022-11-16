@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="시설 고장 신고"
+            android:textColor="@color/white"
+            android:fontFamily="@font/yonseibold"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            />
+
+       <TextView
+           app:layout_constraintTop_toBottomOf="@id/title"
+           android:id="@+id/titleoflogin"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:text="|신규등록|"
+           android:textColor="#2c91d2"
+           android:textStyle="bold"
+           android:textSize="25sp"
+           android:layout_marginTop="170dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/logintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/titleoflogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintEnd_toStartOf="@id/clicksignupadmin"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="관리자  등록은  "
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/clicksignupadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/logintitle"
+            app:layout_constraintStart_toEndOf="@id/logintitle"
+            app:layout_constraintBottom_toBottomOf="@id/logintitle"
+            app:layout_constraintEnd_toStartOf="@id/logintitlecont"
+            android:text="@string/click"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/logintitlecont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/logintitle"
+            app:layout_constraintStart_toEndOf="@id/clicksignupadmin"
+            app:layout_constraintBottom_toBottomOf="@id/logintitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="  선택해주세요."
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/belongtext"
+            app:layout_constraintTop_toBottomOf="@id/logintitle"
+            app:layout_constraintStart_toStartOf="parent"
+             android:layout_marginEnd="5dp"
+            android:background="@drawable/button_login_bg"
+            android:text="소속"
+            android:textColor="@color/white"
+            android:paddingHorizontal="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@id/belongsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/belongsp"
+            android:background="@drawable/box_border"
+            android:padding="1dp"
+            android:spinnerMode="dialog"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@id/belongtext"
+            app:layout_constraintStart_toEndOf="@+id/belongtext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/belongtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/serialnumber"
+            app:layout_constraintTop_toBottomOf="@id/belongtext"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_login_bg"
+            android:text="내선번호"
+            android:textColor="@color/white"
+            android:paddingHorizontal="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@id/belongsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/serialnumberunput"
+            android:background="@drawable/box_border"
+            android:padding="12dp"
+            android:hint="내선 전화번호 입력"
+            android:textColorHint="#aaaaaa"
+            android:layout_marginStart="5dp"
+            android:spinnerMode="dialog"
+            android:textSize="12dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@id/serialnumber"
+            app:layout_constraintStart_toEndOf="@+id/serialnumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/serialnumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="40dp"
+            android:text="등록"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_login_bg"
+            app:layout_constraintTop_toBottomOf="@id/serialnumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@id/regist"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/logo"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fault report</string>
+    <string name="textview_signup"><u>회원가입</u></string>
+    <string name="click"><u>여기를</u></string>
 </resources>

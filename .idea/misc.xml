@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/box_border.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/button_login_bg.xml" value="0.2205" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2205" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/drawable/spinner_border.xml" value="0.2205" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2973709106445313" />
+        <entry key="app/src/main/res/layout/intro.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/signup_admin.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/signup_chose.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/signup_user.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/spineritems.xml" value="0.3890625" />
       </map>
     </option>
   </component>
