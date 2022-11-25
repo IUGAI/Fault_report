@@ -3,16 +3,53 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg.xml" value="0.2205" />
         <entry key="app/src/main/res/drawable/box_border.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/box_boreder_radius.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/boxborer.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/button_left_selector.xml" value="0.2205" />
         <entry key="app/src/main/res/drawable/button_login_bg.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/button_report_contens.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/button_report_go.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/cellshape.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/footer_report_content_bg.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_baseline_build_24.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_baseline_medical_services_24.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24_36px.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2205" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/notes_item_bg_s.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/notice_bg.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/notice_items_bg.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radio_button_left_cheked.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radio_button_leftuncheked.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radio_button_right_checked.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radio_button_right_selector.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radio_button_right_uncheked.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radiobuttonborder.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/radiobuttonnonborder.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/report_icon.xml" value="0.2205" />
         <entry key="app/src/main/res/drawable/spinner_border.xml" value="0.2205" />
+        <entry key="app/src/main/res/drawable/spinner_items.xml" value="0.108" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2973709106445313" />
-        <entry key="app/src/main/res/layout/intro.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_signup_admin.xml" value="0.31936725096194957" />
+        <entry key="app/src/main/res/layout/admin_report_check.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/intro.xml" value="0.25514068603515627" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.27735522703616833" />
+        <entry key="app/src/main/res/layout/main.xml" value="0.2930233764648438" />
+        <entry key="app/src/main/res/layout/notice_content.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/notice_content_detail.xml" value="0.35568799847286137" />
+        <entry key="app/src/main/res/layout/notice_recycler_layout.xml" value="0.31936725096194957" />
+        <entry key="app/src/main/res/layout/notice_write.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/report_content.xml" value="0.28986256917317704" />
+        <entry key="app/src/main/res/layout/report_final_check.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/report_write.xml" value="0.30901947021484377" />
         <entry key="app/src/main/res/layout/signup_admin.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/signup_chose.xml" value="0.3890625" />
-        <entry key="app/src/main/res/layout/signup_user.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/signup_user.xml" value="0.2995529174804688" />
         <entry key="app/src/main/res/layout/spineritems.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/welcome.xml" value="0.4036458333333333" />
       </map>
     </option>
   </component>

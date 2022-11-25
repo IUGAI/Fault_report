@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:background="#003976"
+            android:paddingVertical="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <ImageView
+                 android:id="@+id/menu_button"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toStartOf="@id/header_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_baseline_menu_24_36px"/>
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시설 고장 신고"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/yonsei_main"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/menu_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/header_logo"
+                />
+
+            <ImageView
+                android:id="@+id/header_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_title"
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/title_report"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/siren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/siren"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                android:id="@+id/broke_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고장 신고"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/ygo"
+                android:gravity="start"
+                app:layout_constraintTop_toTopOf="@id/siren"
+                app:layout_constraintStart_toEndOf="@id/siren"
+                app:layout_constraintBottom_toTopOf="@id/date"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-07-05 14:53"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@id/broke_report"
+                app:layout_constraintStart_toEndOf="@id/siren"
+                app:layout_constraintBottom_toBottomOf="@id/siren"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/login_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/title_report"
+            app:layout_constraintBottom_toBottomOf="@id/title_report"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="고길동 VIP옵서버"
+                 android:textColor="@color/black"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:fontFamily="@font/ygo"/>
+            <TextView
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="010-1111-2222"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/ygo"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_report_contens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/button_do_report"
+            android:text="신고내용"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_report_contens"
+            android:paddingHorizontal="40dp"
+            app:layout_constraintTop_toBottomOf="@id/title_report"
+            app:layout_constraintStart_toStartOf="@id/title_report"
+
+            />
+
+        <Button
+            android:id="@+id/button_do_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고장 신고 하기"
+             app:layout_constraintStart_toEndOf="@id/button_report_contens"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_login_bg"
+            android:paddingHorizontal="40dp"
+            app:layout_constraintTop_toBottomOf="@id/title_report"
+            app:layout_constraintEnd_toEndOf="@id/login_inf"
+            />
+
+        <LinearLayout
+            android:id="@+id/notice"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_bg"
+            app:layout_constraintTop_toBottomOf="@id/button_report_contens"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="공지사항"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingVertical="5dp"
+                />
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recyclerivew"
+                   android:layout_marginHorizontal="1dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/footers_report_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/footer_report_content_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/footer_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="고장 신고 내용"
+                android:background="#00507c"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:paddingVertical="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <RadioGroup
+                android:id="@+id/radiobutoon"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/broke_radio"
+                    android:onClick="onclickbuttonradio"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:buttonTint="@color/teal_200"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/medicine_radio"
+                    android:onClick="onclickbuttonradio"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/teal_200"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/repair_radio"
+                    android:onClick="onclickbuttonradio"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/teal_200"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/safe_radio"
+                    android:onClick="onclickbuttonradio"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/teal_200"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/clean_radio"
+                    android:onClick="onclickbuttonradio"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/teal_200"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+
+
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_marginHorizontal="10dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+                  <LinearLayout
+                      android:id="@+id/broke"
+                      app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toStartOf="@id/medicine"
+                      android:orientation="vertical"
+                      android:paddingHorizontal="15dp"
+                      android:paddingVertical="5dp"
+                      android:background="@drawable/report_icon"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/ic_baseline_phone_missed_24" />
+                      <TextView
+                          android:textColor="@color/black"
+                          android:textStyle="bold"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="시설\n고장"/>
+
+                  </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/medicine"
+                    app:layout_constraintStart_toEndOf="@id/broke"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/repaire"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/report_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_medical_services_24"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="의료\n장비"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/repaire"
+                    app:layout_constraintStart_toEndOf="@id/medicine"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/safe"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/report_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_build_24"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="하자\n신청"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/safe"
+                    app:layout_constraintStart_toEndOf="@id/repaire"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/clean"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/report_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_videocam_24"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="보안\n신고"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clean"
+                    app:layout_constraintStart_toEndOf="@id/safe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/report_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_cleaning_services_24"/>
+                    <TextView
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="청소\n요청"/>
+
+                </LinearLayout>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <Button
+                android:id="@+id/button_report_go"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="신고하러가기"
+                android:textSize="15sp"
+                android:background="@drawable/button_report_go"
+                android:layout_gravity="center"
+                android:paddingHorizontal="70dp"
+                android:layout_marginVertical="15dp"
+                />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+

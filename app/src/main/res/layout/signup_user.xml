@@ -99,7 +99,8 @@
         <Spinner
             android:id="@+id/belongsp"
             android:background="@drawable/box_border"
-            android:padding="1dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="5dp"
             android:spinnerMode="dialog"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="@id/belongtext"
@@ -129,12 +130,14 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:id="@+id/serialnumberunput"
+            android:id="@+id/serialnumberinput"
             android:background="@drawable/box_border"
             android:padding="12dp"
             android:hint="내선 전화번호 입력"
             android:textColorHint="#aaaaaa"
             android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:maxLength="11"
             android:spinnerMode="dialog"
             android:textSize="12dp"
             android:layout_marginEnd="20dp"
