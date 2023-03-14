@@ -121,6 +121,7 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/name1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="고길동 VIP옵서버"
@@ -129,6 +130,7 @@
                 android:textStyle="bold"
                 android:fontFamily="@font/ygo"/>
             <TextView
+                android:id="@+id/number"
                 android:layout_gravity="end"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -165,6 +167,7 @@
                     android:layout_marginBottom="1dp"
                     android:textColor="@color/black"/>
                 <TextView
+                    android:id="@+id/title_reports"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="컴퓨터고장"
@@ -177,6 +180,7 @@
                     android:layout_weight="10"
                     android:textColor="@color/black"/>
                 <ImageView
+                    android:id="@+id/report_img"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -198,6 +202,7 @@
                     android:layout_marginBottom="1dp"
                     android:textColor="@color/black"/>
                 <TextView
+                    android:id="@+id/location"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="교수실"
@@ -212,6 +217,7 @@
             </TableRow>
             <TableRow>
                 <TextView
+
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="신고자"
@@ -224,6 +230,7 @@
                     android:layout_marginBottom="1dp"
                     android:textColor="@color/black"/>
                 <TextView
+                    android:id="@+id/name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="교수실(55551010)"
@@ -250,6 +257,7 @@
                     android:layout_marginBottom="1dp"
                     android:textColor="@color/black"/>
                 <TextView
+                    android:id="@+id/datetime"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="07-05 15:02:57"
@@ -322,10 +330,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <ImageView
+                            android:id="@+id/image_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_medical_services_24"/>
                         <TextView
+                            android:id="@+id/text"
                             android:textColor="@color/black"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -382,7 +392,7 @@
             app:layout_constraintEnd_toEndOf="@id/notice_desr"
             android:paddingHorizontal="80dp"
             android:layout_width="wrap_content"
-            android:text="작성확인"
+            android:text="확인"
             android:background="#80c2ee"
             android:layout_height="wrap_content"/>
 

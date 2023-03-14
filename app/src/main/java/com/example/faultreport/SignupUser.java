@@ -43,6 +43,7 @@ public class SignupUser extends AppCompatActivity {
         button = findViewById(R.id.regist);
         editText = findViewById(R.id.serialnumberinput);
         textView = findViewById(R.id.clicksignupadmin);
+        getSupportActionBar().hide();
 
 
 

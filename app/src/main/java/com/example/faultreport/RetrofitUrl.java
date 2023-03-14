@@ -29,7 +29,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitUrl {
 
-   public static String Urls = "http://10.50.113.218/php1.1/";
+   public static String Urls = "http://211.255.23.65/homepage/api/";
    boolean error;
    public static Retrofit.Builder builder = new Retrofit.Builder()
            .baseUrl(RetrofitUrl.Urls)

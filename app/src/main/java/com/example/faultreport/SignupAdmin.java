@@ -39,6 +39,7 @@ public class SignupAdmin extends AppCompatActivity {
         spinnerrank = findViewById(R.id.ranksp);
         regist = findViewById(R.id.regist);
         phnumber = findViewById(R.id.phnumber);
+        getSupportActionBar().hide();
         name = findViewById(R.id.nameedtext);
 
        setspinneradapter(rank,spinnerrank);

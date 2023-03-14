@@ -9,10 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.HolderView> {
 
-    ArrayList notices = new ArrayList<>();
+    List<Notice> notices = new ArrayList<>();
 
     public Adapter(ArrayList notices) {
         this.notices = notices;
@@ -29,7 +30,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderView> {
     public void onBindViewHolder(@NonNull HolderView holder, int position) {
          Notice notice = (Notice) notices.get(position);
          holder.count.setText(notice.getId());
-         holder.content.setText(notice.getContent().substring(0,10) + "...");
+         holder.content.setText(String.format("%s...",notice.getContent().substring(0,10)));
          holder.date.setText(notice.getDate());
     }
 
@@ -48,4 +49,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.HolderView> {
             date = itemView.findViewById(R.id.date);
         }
     }
+
+
 }
